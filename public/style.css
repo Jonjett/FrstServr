@@ -1,0 +1,28 @@
+.form {
+  border: 2px solid black;
+  border-radius: 0 10px 10px 0;
+  width: 440px;
+}
+
+.form2 {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-content: space-between;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.form2 label {
+  margin: 8px;
+  padding: 2px;
+}
+
+.form2 input {
+  margin: 8px;
+  padding: 2px;
+  width: 300px;
+}
+
+.panel {
+  margin: 10px 10px 10px 350px;
+}
