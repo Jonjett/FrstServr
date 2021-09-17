@@ -9,6 +9,29 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(express.urlencoded({extended:false}))
 
+const data_ = [
+  {
+    logID: {
+      netID: "123456789",
+      group: "Line A",
+      andon: "call",
+      status: "ACTIVE",
+    },
+  },
+  {
+    andon: {
+      productID: "Barcode/RFID Here",
+      status: "OK",
+      code: "1",
+      message: "Message here",
+      data: "Stringed data",
+    },
+  },
+];
+
+app.get("/api/lineA/andonlog", (req, res) => {
+  res.json(data_);
+});
 
 app.get("/" , (req, res) => {
     res.send(`
